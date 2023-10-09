@@ -20,7 +20,6 @@
 body {
     background-color: var(--very-light-gray);
     min-height: 100vh;
-
 }
 
 .container {
@@ -31,18 +30,19 @@ body {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    margin: 3rem 15rem 9rem 15rem;
+    margin: 10rem 15rem 9rem 15rem;
 }
 
 .container--properties {
     padding: 2.8rem 4rem 2.8rem 4rem;
     text-align: left;
     flex: 1;
-    border-radius: 0.5rem;
+
 }
 
 .container__one {
     background-color: var(--bright-orange);
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .container__two {
@@ -51,6 +51,7 @@ body {
 
 .container__three {
     background-color: var(--very-dark-cyan);
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .container--image {
@@ -62,7 +63,7 @@ body {
 .container__heading {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--very-light-gray);
     padding-bottom: 2.5rem;
@@ -129,6 +130,16 @@ body {
     .container--properties {
         padding: 2.8rem 1rem 2.8rem 1rem;
     }
+
+    .container__one {
+        background-color: var(--bright-orange);
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .container__three {
+        background-color: var(--bright-orange);
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
 }
 
 @media (max-width: 365px) {
@@ -140,5 +151,15 @@ body {
 
     .container--properties {
         padding: 2.8rem 1rem 2.8rem 1rem;
+    }
+
+    .container__one {
+        background-color: var(--bright-orange);
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .container__three {
+        background-color: var(--bright-orange);
+        border-radius: 0 0 0.5rem 0.5rem;
     }
 }
