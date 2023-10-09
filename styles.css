@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* paragraph */
+    --very-light-gray: hsl(0, 0%, 95%);
+    /* background,
+        headings,
+        buttons */
+}
+
+body {
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+
+}
+
+.container {
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: var(--very-light-gray);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 3rem 15rem 9rem 15rem;
+}
+
+.container--properties {
+    padding: 2.8rem 4rem 2.8rem 4rem;
+    text-align: left;
+    flex: 1;
+    border-radius: 0.5rem;
+}
+
+.container__one {
+    background-color: var(--bright-orange);
+}
+
+.container__two {
+    background-color: var(--dark-cyan);
+}
+
+.container__three {
+    background-color: var(--very-dark-cyan);
+}
+
+.container--image {
+    width: 5rem;
+    height: auto;
+    padding-bottom: 2.5rem;
+}
+
+.container__heading {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    padding-bottom: 2.5rem;
+}
+
+.container__description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--transparent-white);
+}
+
+.container__button {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.8rem 1.4rem;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+.container__one .container__button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container__two .container__button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container__three .container__button {
+    color: hsl(179, 100%, 13%);
+}
+
+.container--properties .container__button:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+.attribution--properties {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.attribution--source,
+.attribution--creator {
+    color: hsl(228, 45%, 44%);
+
+}
+
+@media (max-width: 635px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 8rem 2rem 8rem;
+    }
+
+    .container--properties {
+        padding: 2.8rem 1rem 2.8rem 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0.5rem 2rem 1rem;
+    }
+
+    .container--properties {
+        padding: 2.8rem 1rem 2.8rem 1rem;
+    }
+}
