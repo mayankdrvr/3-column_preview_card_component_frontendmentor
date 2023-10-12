@@ -129,7 +129,7 @@ body {
     }
 
     .container--properties {
-        padding: 2.8rem 1rem 2.8rem 1rem;
+        padding: 2.8rem 4rem 2.8rem 4rem;
     }
 
     .container__one {
@@ -151,15 +151,20 @@ body {
     }
 
     .container--properties {
-        padding: 2.8rem 1rem 2.8rem 1rem;
+        padding: 2.8rem 4rem 2.8rem 4rem;
     }
 
-    .container__one {
-        border-radius: 0.5rem 0 0 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 920px;
+        height: 500px;
     }
 
-    .container__three {
-
-        border-radius: 0 0.5rem 0.5rem 0;
+    .container--properties {
+        padding: 2.8rem 4rem 2.8rem 4rem;
     }
 }
